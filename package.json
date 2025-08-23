@@ -14,7 +14,8 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
-    "scrap:stars": "node dist/scripts/scrappers/stars-by-constellation/index.js"
+    "scrap:stars": "node dist/scripts/scrappers/stars-by-constellation/index.js",
+    "normalize:stars": "node dist/scripts/normalizers/stars.js"
   },
   "license": "MIT",
   "devDependencies": {
