@@ -465,7 +465,7 @@
     ["alpha", "mu"],
     ["mu", "lambda"],
     ["mu", "kappa"],
-    ["mu, eta"],
+    ["mu", "eta"],
     ["eta", "beta"],
     ["beta", "alpha"],
     ["beta", "gamma"],
@@ -494,7 +494,7 @@
     ["zeta", "alpha"],
     ["zeta", "eta"]
   ],
-  "Lyn:": [],
+  "Lyn": [],
   "Lyr": [
     ["alpha", "epsilon1"],
     ["alpha", "zeta1"],
