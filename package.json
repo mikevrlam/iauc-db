@@ -1,5 +1,5 @@
 {
-  "name": "@mvlam/iauc-db",
+  "name": "@mikevrlam/iauc-db",
   "version": "0.1.0",
   "description": "Database of stars on 88 International Astronomical Union (IAU) recognized constellations",
   "main": "dist/index.js",
