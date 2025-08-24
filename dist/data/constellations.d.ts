@@ -1,8 +1,3 @@
-declare const constellations: {
-    name: string;
-    abbr: {
-        iau: string;
-        nasa: string;
-    };
-}[];
+import { Constellation } from "./types";
+declare const constellations: Constellation[];
 export default constellations;

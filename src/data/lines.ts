@@ -1,4 +1,6 @@
-const lines = {
+import { Line } from "./types";
+
+const lines: Record<string, Line[]> = {
   And: [
     ["gamma1", "beta"],
     ["beta", "delta"],
