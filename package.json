@@ -10,10 +10,32 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -w -p tsconfig.json",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "scrap:stars": "node dist/scripts/scrappers/stars-by-constellation/index.js",
+    "normalize:stars": "node dist/scripts/normalizers/stars.js",
+    "build:render": "tsc render/main.ts --outDir render --module esnext",
+    "render": "node dist/scripts/server/index.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }
