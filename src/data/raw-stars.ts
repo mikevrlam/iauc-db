@@ -1,4 +1,6 @@
-const rawStars = {
+import { RawStar } from "./types";
+
+const rawStars: Record<string, RawStar[]> = {
   And: [
     ["Alpheratz", "α, (δ)", "00h 08m 23.17s", "+29° 05′ 27.0″", "2.07"],
     ["Mirach", "β", "01h 09m 43.80s", "+35° 37′ 15.0″", "2.07"],

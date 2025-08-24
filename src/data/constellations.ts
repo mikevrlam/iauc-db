@@ -1,4 +1,6 @@
-const constellations = [
+import { Constellation } from "./types";
+
+const constellations: Constellation[] = [
   {
     name: "Andromeda",
     abbr: {

@@ -1,4 +1,6 @@
-const stars = {
+import { Star } from "./types";
+
+const stars: Record<string, Star[]> = {
   And: [
     ["Alpheratz", "α, (δ)", "alpha", 0.13976944444444445, 29.090833333333332, "2.07", 1],
     ["Mirach", "β", "beta", 1.1621666666666666, 35.62083333333333, "2.07", 1],
