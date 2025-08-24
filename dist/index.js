@@ -4,13 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.stars = exports.lines = exports.rawStars = exports.constellations = exports.version = void 0;
-const constellations_json_1 = __importDefault(require("../data/constellations.json"));
-const raw_stars_json_1 = __importDefault(require("../data/raw-stars.json"));
-const lines_json_1 = __importDefault(require("../data/lines.json"));
-const stars_json_1 = __importDefault(require("../data/stars.json"));
+const constellations_1 = __importDefault(require("./data/constellations"));
+const raw_stars_1 = __importDefault(require("./data/raw-stars"));
+const lines_1 = __importDefault(require("./data/lines"));
+const stars_1 = __importDefault(require("./data/stars"));
 // temporary placeholder API to verify build/publish works
 exports.version = "0.1.0";
-exports.constellations = constellations_json_1.default;
-exports.rawStars = raw_stars_json_1.default;
-exports.lines = lines_json_1.default;
-exports.stars = stars_json_1.default;
+exports.constellations = constellations_1.default;
+exports.rawStars = raw_stars_1.default;
+exports.lines = lines_1.default;
+exports.stars = stars_1.default;

@@ -1,12 +1,12 @@
-import constellationsJson from "../data/constellations.json";
-import rawStarsJson from "../data/raw-stars.json";
-import linesJson from "../data/lines.json";
-import starsJson from "../data/stars.json";
+import constellationsData from "./data/constellations";
+import rawStarsData from "./data/raw-stars";
+import linesData from "./data/lines";
+import starsData from "./data/stars";
 
 // temporary placeholder API to verify build/publish works
 export const version = "0.1.0";
 
-export const constellations = constellationsJson;
-export const rawStars = rawStarsJson;
-export const lines = linesJson;
-export const stars = starsJson;
+export const constellations = constellationsData;
+export const rawStars = rawStarsData;
+export const lines = linesData;
+export const stars = starsData;
