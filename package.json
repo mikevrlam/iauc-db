@@ -15,10 +15,13 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
     "scrap:stars": "node dist/scripts/scrappers/stars-by-constellation/index.js",
-    "normalize:stars": "node dist/scripts/normalizers/stars.js"
+    "normalize:stars": "node dist/scripts/normalizers/stars.js",
+    "build:render": "tsc render/main.ts --outDir render --module esnext",
+    "render": "node dist/scripts/server/index.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "@typescript-eslint/eslint-plugin": "^8.40.0",
     "@typescript-eslint/parser": "^8.40.0",
     "axios": "^1.11.0",
@@ -31,6 +34,7 @@
   },
   "dependencies": {
     "@types/node": "^24.3.0",
+    "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
   }
