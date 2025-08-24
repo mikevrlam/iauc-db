@@ -1,4 +1,15 @@
 node_modules
-dist
 npm-debug.log*
 package-lock.json
+
+# Ignore everything in input and output
+input/*
+output/*
+
+# But keep the sample folders
+!input/sample/
+!output/sample/
+
+# And keep the contents of sample folders
+!input/sample/**
+!output/sample/**
